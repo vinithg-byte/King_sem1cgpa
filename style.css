@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#141e30,#243b55);
+    padding:15px;
+}
+
+.container{
+    width:100%;
+    max-width:900px;
+    margin:auto;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:25px;
+    color:white;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    font-size:35px;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:25px;
+    opacity:0.8;
+}
+
+.button-group{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+
+button{
+    flex:1;
+    min-width:120px;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.03);
+}
+
+#addBtn{
+    background:#00c853;
+    color:white;
+}
+
+#calculateBtn{
+    background:#2962ff;
+    color:white;
+}
+
+#resetBtn{
+    background:#ff1744;
+    color:white;
+}
+
+.table-head,
+.subject-row{
+    display:grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap:10px;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.table-head{
+    font-weight:bold;
+    opacity:0.8;
+}
+
+input,
+select{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+}
+
+.delete-btn{
+    background:#ff1744;
+    color:white;
+}
+
+.result-box{
+    margin-top:25px;
+    background:rgba(255,255,255,0.08);
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+}
+
+#cgpa{
+    font-size:50px;
+    font-weight:bold;
+    color:#00e676;
+    margin-top:10px;
+}
+
+#gradeMessage{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+    .table-head{
+        display:none;
+    }
+
+    .subject-row{
+        grid-template-columns:1fr;
+        background:rgba(255,255,255,0.05);
+        padding:15px;
+        border-radius:15px;
+    }
+
+    button{
+        width:100%;
+    }
+
+    h1{
+        font-size:28px;
+    }
+
+    #cgpa{
+        font-size:40px;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Advanced CGPA Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>CGPA Calculator</h1>
+
+            <p class="subtitle">
+                Calculate CGPA with custom subjects, credits & grades
+            </p>
+
+            <div class="button-group">
+                <button id="addBtn">+ Add Subject</button>
+                <button id="calculateBtn">Calculate</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+
+            <div class="table-head">
+                <div>Subject</div>
+                <div>Credits</div>
+                <div>Grade</div>
+                <div>Action</div>
+            </div>
+
+            <div id="subjectContainer"></div>
+
+            <div class="result-box">
+                <h2>Your CGPA</h2>
+                <div id="cgpa">0.00</div>
+
+                <p id="gradeMessage"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
